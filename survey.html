@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Animal Facts Survey!</title>
+    <link rel="stylesheet" href="css/form-styles.css"><script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+        
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" target="_self" class="active">Cool Animal Facts</a>
+        <div id="myLinks">
+            <a href="about.html" target="_self">About</a>
+            <a href="animals.html" target="_self">Animals</a>
+            <a href="survey.html" target="_self">Survey</a>
+            <a href="contact-form.html" target="_self">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <header>
+        <img class="header-img" src="images/header-removebg-preview.png" alt="Header image for Cool Animal Facts">
+        <h1 class="header-title"> Cool Animal Facts </h1>
+        <nav class="upper-menu">
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+                <li><a href="animals.html" target="_self">Animals</a></li>
+                <li> <a href="survey.html" target="_self">Survey</a></li>
+                <li><a href="contact-form.html" target="_self">Contact</a></li>
+            </ul>
+        </nav>
+    </header> <br>
+    <h1> Please consider taking this quick survey about animals!</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results" method="post">
+        <fieldset>
+            <legend>What are your favorite animals and why?</legend>
+            <div>
+                <label for="animals-text">Type here:</label> <br> <br>
+                <textarea name="animals" id="animals-text" wrap="hard" cols="60" rows="10" required></textarea>
+            </div> 
+        </fieldset> <br>
+        <fieldset>
+            <legend>
+                Do you have a pet/pets?
+            </legend>
+            <label for="pet-yes"> Yes! </label>
+            <input type="radio" name="petyes" id="pet-yes" value="petyes" required>
+            <label for="pet-no"> No! (bummer) </label>
+            <input type="radio" name="petno" id="pet-no" value="petno" required>
+        </fieldset> <br>
+        <fieldset>
+            <legend>
+                If yes, how many?
+            </legend>
+            <label for="pet1-2"> 1-2 </label>
+            <input type="radio" name="pet1-2" id="pet1-2" value="pet1-2">
+            <label for="pet3-5"> 3-5 </label>
+            <input type="radio" name="petno" id="pet-no" value="petno">
+            <label for="pet6"> 6 or more </label>
+            <input type="radio" name="pet6more" id="pet6" value="pet6more">
+        </fieldset> <br>
+        <fieldset>
+            <legend> Additional comments and suggestions:</legend>
+            <div>
+                <label for="comments">Type here:</label> <br> <br>
+                <textarea name="comment" id="comments" wrap="hard" cols="60" rows="10" required></textarea>
+            </div>
+        </fieldset>
+        <input type="submit" onclick="alert('Successfully submitted!')" value="Submit">
+        <input type="reset" value="Reset"> 
+    </form> <br>
+    <iframe name="cgi-results" id="cgi-results"></iframe> <br>
+    <img class="center-image" src="images/fancy capybara.webp" alt="Capybara in a suit">
+    <footer>
+        <p>
+            @2022 Cool Animal Facts!
+        </p>
+    </footer>
+</body>
+</html>

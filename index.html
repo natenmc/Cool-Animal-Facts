@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Animal Facts!</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+        
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" target="_self" class="active">Cool Animal Facts</a>
+        <div id="myLinks">
+            <a href="about.html" target="_self">About</a>
+            <a href="animals.html" target="_self">Animals</a>
+            <a href="survey.html" target="_self">Survey</a>
+            <a href="contact-form.html" target="_self">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <header>
+        <img class="header-img" src="images/header-removebg-preview.png" alt="Header image for Cool Animal Facts"> 
+        <h1 class="header-title"> Cool Animal Facts </h1>
+        <nav class="upper-menu">
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+                <li><a href="animals.html" target="_self">Animals</a></li>
+                <li><a href="survey.html" target="_self">Survey</a></li>
+                <li><a href="contact-form.html" target="_self">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="lower-menu">
+            <h2>Other Sites</h2>
+            <ul>
+                <li><a href="https://animalcharitiesofamerica.org/" target="_blank">Animal Charities</a></li>
+                <li><a href="http://www.dfwcnmi.com/" target="_blank">CNMI Division of Fish and Wildlife</a></li>
+                <li><a href="https://www.nationalgeographic.com/animals" target="_blank">National Geographic Animals</a></li>
+                <li><a href="https://www.lollypop.org/" target="_blank">Adopt a pet!!!</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div>
+                <h1>Welcome to Cool Animal Facts!</h1>
+            </div>
+            <img src="images/capybara-sun.jpg" alt="A capybara relaxing in the sun">
+            <p>
+                Here at Cool Animal Facts we are dedicated to educating everyone, young or old, about cool animals! Cool animals are one of the best parts of Earth, and we are 
+                happy to teach everyone about them!
+            </p> <br>
+            <p>
+                Due to a limited budget and our website developer having chronic procrastination, our website currently does not display all of the cool animals. However we have chosen 
+                the coolest animals to show because our boss needs to see that we at least did something. 
+            </p> <br>
+            <p>
+                After you look around the site and get a glimpse of some of the coolest animals on Earth, please consider taking the survey!
+            </p> <br>
+            <a href="survey.html" target="_self"> <img class="hippo" src="images/hippo and tortoise.jpg" alt="A hippo and a tortoise"> </a> <br>
+            <p> Click on this picture to take the survey! </p> <br> <br>
+
+        </article>
+        <aside>
+            <h1>Recent Articles</h1>
+            <blockquote>
+                <h4>Dog Arrested</h4>
+                <p>
+                    A dog on Saipan has been reportedly arrested for being too much of a good boy...
+                </p>
+            </blockquote> <br>
+            <blockquote>
+                <h4>Dangerous Cat Swarms in Garapan</h4>
+                <p>
+                    At seemingly random places in Garapan, dangerous cat swarms have been spotted...
+                </p>
+            </blockquote> <br>
+            <blockquote>
+                <h4>Geckos on the Rise</h4>
+                <p>
+                    Geckos in the CNMI have recently started gathering for unknown reasons...
+                </p>
+            </blockquote> <br> <br>
+        </aside>
+    </main>
+    <footer>
+        <p>
+            @2022 Cool Animal Facts!
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>About Us</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        /*--rainbow animation by zak*/
+        .demo{
+            width:400px;
+            height:400px;
+            font-size:30px;
+            float:left;
+            text-align:left;
+        }
+
+        .rainbow-bg{
+            animation: rainbow-bg 2.5s linear;
+            animation-iteration-count: infinite;
+        }
+
+        .rainbow{
+            animation: rainbow 2.5s linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rainbow-bg{
+            100%,0%{
+                background-color: rgb(255,0,0);
+            }
+            8%{
+                background-color: rgb(255,127,0);
+            }
+            16%{
+                background-color: rgb(255,255,0);
+            }
+            25%{
+                background-color: rgb(127,255,0);
+            }
+            33%{
+                background-color: rgb(0,255,0);
+            }
+            41%{
+                background-color: rgb(0,255,127);
+            }
+            50%{
+                background-color: rgb(0,255,255);
+            }
+            58%{
+                background-color: rgb(0,127,255);
+            }
+            66%{
+                background-color: rgb(0,0,255);
+            }
+            75%{
+                background-color: rgb(127,0,255);
+            }
+            83%{
+                background-color: rgb(255,0,255);
+            }
+            91%{
+                background-color: rgb(255,0,127);
+            }
+        }
+
+        @keyframes rainbow{
+            100%,0%{
+                color: rgb(255,0,0);
+            }
+            8%{
+                color: rgb(255,127,0);
+            }
+            16%{
+                color: rgb(255,255,0);
+            }
+            25%{
+                color: rgb(127,255,0);
+            }
+            33%{
+                color: rgb(0,255,0);
+            }
+            41%{
+                color: rgb(0,255,127);
+            }
+            50%{
+                color: rgb(0,255,255);
+            }
+            58%{
+                color: rgb(0,127,255);
+            }
+            66%{
+                color: rgb(0,0,255);
+            }
+            75%{
+                color: rgb(127,0,255);
+            }
+            83%{
+                color: rgb(255,0,255);
+            }
+            91%{
+                color: rgb(255,0,127);
+            }
+        }
+    </style>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+        
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" target="_self" class="active">Cool Animal Facts</a>
+        <div id="myLinks">
+            <a href="about.html" target="_self">About</a>
+            <a href="animals.html" target="_self">Animals</a>
+            <a href="survey.html" target="_self">Survey</a>
+            <a href="contact-form.html" target="_self">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <header>
+        <img class="header-img" src="images/header-removebg-preview.png" alt="Header image for Cool Animal Facts">
+        <h1 class="header-title"> Cool Animal Facts </h1>
+        <nav class="upper-menu">
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+                <li><a href="animals.html" target="_self">Animals</a></li>
+                <li> <a href="survey.html" target="_self">Survey</a></li>
+                <li><a href="contact-form.html" target="_self">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="big-dawg" src="images/Developer-Dog.jpg" alt="Developer Dog">
+            <div>
+                <h1> About Us </h1>
+            </div>
+            
+            <p>
+                We are a small indie developer team based in Saipan in the Northern Mariana Islands. 
+            </p> <br>
+            <p>
+                We are mostly freelance developers but we also take jobs whenever we can.
+            </p> <br>
+            <p>
+                We are dedicated to educating people about cool animals, not because we have to, but because we love to. 
+            </p> <br>
+    </main>
+    <div class="gallery-row"></div>
+    <img class="gallery-column" src="images/cat-code.jpg" alt="cat meme"> 
+    <img class="gallery-column" src="images/dog-and-computer-scaled.jpg" alt="Dog at computer"> <br>
+
+    <div class='demo rainbow'> ALSO RAINBOW TEXT IS COOL SO WE ADDED IT</div> <br>
+    <footer>
+        <p>
+            @2022 Cool Animal Facts!
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinchillas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+        
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" target="_self" class="active">Cool Animal Facts</a>
+        <div id="myLinks">
+            <a href="about.html" target="_self">About</a>
+            <a href="animals.html" target="_self">Animals</a>
+            <a href="survey.html" target="_self">Survey</a>
+            <a href="contact-form.html" target="_self">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <header>
+        <img class="header-img" src="images/header-removebg-preview.png" alt="Header image for Cool Animal Facts"> 
+        <h1 class="header-title"> Cool Animal Facts </h1>
+        <nav class="upper-menu">
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+                <li><a href="animals.html" target="_self">Animals</a></li>
+                <li><a href="survey.html" target="_self">Survey</a></li>
+                <li><a href="contact-form.html" target="_self">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>
+            The chinchilla (Chinchilla chinchilla and Chinchilla lanigera) is a species of rodent that is native to the Andes mountains in South America. They have the densest fur among all 
+            land mammals.
+        </p> <br>
+        <div class="responsive">
+            <img class="center-image" src="images/chinchi.jpg" alt="Chinchilla" style="height: 331.35px;">
+            <img class="center-image" src="images/chinchi-holding.jpg" alt="Chinchilla holding finger">
+        </div> <br>
+        <p>
+            Chinchillas are extremely agile and can jump extremely high, up to 6 feet. 
+        </p> <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5d60b22YRf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+        <p>
+            Chinchillas cannot bathe in water, as their dense fur makes it so that they can only bathe in dust. If bathed in water, chinchillas may get sick.
+        </p> <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NYIdmpp69MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+        <p>
+            Chinchillas make a variety of different sounds, including barking. Click here to hear what it sounds like!
+        </p> <br>
+        <audio controls>
+            <source src="audio/chinchi-bark.mp3" type="audio/mpeg">
+        </audio>
+    </main> <br> <br>
+    <footer>
+        <p>
+            @2022 Cool Animal Facts!
+        </p>
+    </footer>
+</body>
+</html>
