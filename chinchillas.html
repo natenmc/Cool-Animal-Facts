@@ -30,23 +30,21 @@
     <header>
         <img class="header-img" src="images/header-removebg-preview.png" alt="Header image for Cool Animal Facts"> 
         <h1 class="header-title"> Cool Animal Facts </h1>
-        <nav class="upper-menu">
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-                <li><a href="animals.html" target="_self">Animals</a></li>
-                <li><a href="survey.html" target="_self">Survey</a></li>
-                <li><a href="contact-form.html" target="_self">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
+    <div id="navbar" class="">
+        <a href="index.html" target="_self">Home</a>
+        <a href="about.html" target="_self">About</a>
+        <a href="animals.html" target="_self">Animals</a>
+        <a href="survey.html" target="_self">Survey</a>
+        <a href="contact-form.html" target="_self">Contact</a>
+    </div> <br>
+    <div class="content">
         <p>
             The chinchilla (Chinchilla chinchilla and Chinchilla lanigera) is a species of rodent that is native to the Andes mountains in South America. They have the densest fur among all 
             land mammals.
         </p> <br>
         <div class="responsive">
-            <img class="center-image" src="images/chinchi.jpg" alt="Chinchilla" style="height: 331.35px;">
+            <img class="center-image" src="images/chinchi.jpg" alt="Chinchilla" style="width: 40%;">
             <img class="center-image" src="images/chinchi-holding.jpg" alt="Chinchilla holding finger">
         </div> <br>
         <p>
@@ -63,11 +61,12 @@
         <audio controls>
             <source src="audio/chinchi-bark.mp3" type="audio/mpeg">
         </audio>
-    </main> <br> <br>
+    </div> <br> <br>
     <footer>
         <p>
             @2022 Cool Animal Facts!
         </p>
     </footer>
+    <script src="js/sticky-header.js"></script>
 </body>
 </html>

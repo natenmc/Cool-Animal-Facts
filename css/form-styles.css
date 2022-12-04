@@ -9,15 +9,9 @@ fieldset {
     margin: auto;
     width: 30%;
     border: 3px solid #4C2C72;
-    padding: 20px;
+    padding: 5px;
 }
 
-.name-info{
-    width: 300px;
-}
-.contact-info {
-    width: 300px;
-}
 
 iframe#cgi-results {
     width: 35%;

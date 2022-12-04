@@ -28,16 +28,22 @@ html {
 
 body {
     line-height: 1.5;
-    width: 95%;
-    min-width: 640px;
-    max-width: 940px;
-    max-height: 200%;
+    width: 100%;
+    min-width: 700px;
+    max-height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
     color: #0B0A07;
     font-family: Open-Sans;
     font-size: 20px;
+}
+
+.header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 img:not(.header-img) {
@@ -73,22 +79,21 @@ h1.header-title {
     font-family: Yellowtail; 
     font-size: 75px;
 }
-nav ul {
-    list-style: none;
-
-}
 
 nav a {
     text-decoration: none;
 }
 
-nav.upper-menu {
-    overflow: hidden;
-    background-color: #4B296B;
-    text-align: center;
+nav ul {
+    list-style-type: none;
 }
 
-nav.upper-menu a {
+#navbar {
+    overflow: hidden;
+    background-color: #4B296B;
+}
+
+#navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -97,10 +102,20 @@ nav.upper-menu a {
     text-decoration: none;
 }
 
-nav.upper-menu a:hover {
+#navbar a:hover {
     background-color: #ddd;
     color: #4B296B;
-  }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: auto;
+}
 
 blockquote a {
     text-decoration: none;
@@ -126,22 +141,14 @@ body > header > nav li {
     text-align: center;
 }
 
-nav.upper-menu {
-    width: 100%;
-}
-
-nav.upper-menu li {
-    display: block;
-    float: left;
-}
-
-body > main {
+.content {
     display: block;
     clear: left;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
-main > nav.lower-menu {
+.content > nav.lower-menu {
+    margin-left: 25px;
     display: block;
     float: left;
     width: 20%;
@@ -149,20 +156,20 @@ main > nav.lower-menu {
     margin-top: 10px; 
 }
 
-main > nav h2 {
+.content > nav h2 {
     padding-top: 20px;
     padding-bottom: 5px;
 }
 
-main > nav.lower-menu li {
+.content > nav.lower-menu li {
     padding-top: 10px;
 }
 
-main > nav.lower-menu li a{
+.content > nav.lower-menu li a{
     color: #0B0A07;
 }
 
-main > article {
+.content > article {
     display: block;
     float: left;
     width: 50%;
@@ -179,7 +186,7 @@ p {
     display: block;
 }
 
-main > aside {
+.content > aside {
     display: block;
     float: left;
     width: 20%;    
@@ -241,7 +248,7 @@ footer {
 iframe {
     aspect-ratio: 16 / 9;
     height: auto;
-    width: 100%;
+    width: 50%;
 }
 
 table {
@@ -250,7 +257,7 @@ table {
     width: 100%;
  }
  
- th, td {
+th, td {
     border: 1px solid #4B296B;
     padding: 5px;
     text-align: center;
@@ -262,22 +269,10 @@ table {
     body {
         max-width:fit-content;
     }
-  nav.upper-menu a {
-    display: block; 
-    padding: 12px; 
-    text-decoration: none;
-  }
-  body {
+    body {
     font-size: 17px;
-  }
-  main >img.big-dawg {
-    display: flex;
-        width: 107%;
-        height: 50%;
-        align-items: left;
-    scale: 0.5;
-  }
-    main > div.responsive > img.rhea-bite {
+    }
+    .content > div.responsive > img.rhea-bite {
         width: 100%;
         height: 50%;
     }
@@ -309,10 +304,10 @@ table {
     header {
         display: none;
     }
-    main > article {
+    .content > article {
         width: 100%;
     }
-    nav.upper-menu {
+    #navbar {
         display: none;
     }
     .mobile-container {
@@ -369,24 +364,24 @@ table {
 
       }
 
-    main {
+    .content {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    main > nav.lower-menu{
+    .content > nav.lower-menu{
         width: 100%;
     }
 
-    main > aside {
+    .content > aside {
         width: 100%;
     }
-    main >img.big-dawg {
+    .content >img.big-dawg {
         width: 107%;
         height: 50%;
     }
-    main > div.responsive > img.rhea-bite {
+    .content > div.responsive > img.rhea-bite {
         width: 100%;
         height: 50%;
     }

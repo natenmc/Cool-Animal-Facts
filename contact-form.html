@@ -25,61 +25,63 @@
     <header>
         <img class="header-img" src="images/header-removebg-preview.png" alt="Header image for Cool Animal Facts">
         <h1 class="header-title"> Cool Animal Facts </h1>
-        <nav class="upper-menu">
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-                <li><a href="animals.html" target="_self">Animals</a></li>
-                <li> <a href="survey.html" target="_self">Survey</a></li>
-                <li><a href="contact-form.html" target="_self">Contact</a></li>
-            </ul>
-        </nav>
     </header> <br>
-    <h1> Please fill out this form to contact us!</h1>
-    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results" method="post">
+    <div id="navbar" class="">
+        <a href="index.html" target="_self">Home</a>
+        <a href="about.html" target="_self">About</a>
+        <a href="animals.html" target="_self">Animals</a>
+        <a href="survey.html" target="_self">Survey</a>
+        <a href="contact-form.html" target="_self">Contact</a>
+    </div> <br>
+    <div class="content">
+        <h1> Please fill out this form to contact us!</h1>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results" method="post">
+            <fieldset>
+            <legend>Name:</legend>
+            <div id="first-name">
+                <label for="fname"> First Name:</label>
+                <input type="text" required name="fname" id="fname"><br>
+            </div> 
+            <div id="last-name">
+                <label for="lname"> Last Name:</label>
+                <input type="text" required name="lname" id="lname">
+            </div>
+        </fieldset>
         <fieldset>
-        <legend>Name:</legend>
-        <div id="first-name">
-            <label for="fname"> First Name:</label>
-            <input type="text" required name="fname" id="fname"><br>
-        </div> 
-        <div id="last-name">
-            <label for="lname"> Last Name:</label>
-            <input type="text" required name="lname" id="lname">
-        </div>
-    </fieldset>
-    <fieldset>
-        <legend> Contact Information:</legend>
-        <div id="email-address">
-            <label for="email">Email:</label>
-            <input type="email" required name="email" id="email">
-        </div>
-        <div id="phone-number">
-            <label for="phone">Phone:</label>
-            <input type="tel" required name="phone" id="phone">
-        </div>
-    </fieldset>
-    <fieldset>
-        <legend>Date of Birth:</legend>
-        <div id="date-of-birth">
-            <input type="datetime-local" required name="dob" id="dob">
-        </div>
-    </fieldset>
-    <fieldset>
-        <legend>Message:</legend>
-        <div>
-            <label for="contact-text">Type your message here:</label> <br> <br>
-            <textarea name="contact" id="contact-text" wrap="hard" cols="60" rows="10" required></textarea>
-        </div>
-    </fieldset>
-    <input type="submit" onclick="alert('Successfully submitted!')" value="Submit">
-    <input type="reset" value="Reset">
-    </form>
-    <iframe name="cgi-results" id="cgi-results"></iframe> <br> <br>
+            <legend> Contact Information:</legend>
+            <div id="email-address">
+                <label for="email">Email:</label>
+                <input type="email" required name="email" id="email">
+            </div>
+            <div id="phone-number">
+                <label for="phone">Phone:</label>
+                <input type="tel" required name="phone" id="phone">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Date of Birth:</legend>
+            <div id="date-of-birth">
+                <input type="date" required name="dob" id="dob">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Message:</legend>
+            <div>
+                <label for="contact-text">Type your message here:</label> <br> <br>
+                <textarea name="contact" id="contact-text" wrap="hard" cols="60" rows="10" required></textarea>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </form>
+        <iframe name="cgi-results" id="cgi-results"></iframe> <br> <br>
+    </div>
     <footer>
         <p>
             @2022 Cool Animal Facts!
         </p>
     </footer>
+
+    <script src="js/sticky-header.js"></script>
 </body>
 </html>

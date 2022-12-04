@@ -24,16 +24,15 @@
     <header>
         <img class="header-img" src="images/header-removebg-preview.png" alt="Header image for Cool Animal Facts">
         <h1 class="header-title"> Cool Animal Facts </h1>
-        <nav class="upper-menu">
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-                <li><a href="animals.html" target="_self">Animals</a></li>
-                <li> <a href="survey.html" target="_self">Survey</a></li>
-                <li><a href="contact-form.html" target="_self">Contact</a></li>
-            </ul>
-        </nav>
     </header> <br>
+    <div id="navbar" class="">
+        <a href="index.html" target="_self">Home</a>
+        <a href="about.html" target="_self">About</a>
+        <a href="animals.html" target="_self">Animals</a>
+        <a href="survey.html" target="_self">Survey</a>
+        <a href="contact-form.html" target="_self">Contact</a>
+    </div>
+    <div class="content">
     <h1> Please consider taking this quick survey about animals!</h1>
     <form action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results" method="post">
         <fieldset>
@@ -48,20 +47,20 @@
                 Do you have a pet/pets?
             </legend>
             <label for="pet-yes"> Yes! </label>
-            <input type="radio" name="petyes" id="pet-yes" value="petyes" required>
+            <input type="radio" name="pet-owner" id="pet-yes" value="yes">
             <label for="pet-no"> No! (bummer) </label>
-            <input type="radio" name="petno" id="pet-no" value="petno" required>
+            <input type="radio" name="pet-owner" id="pet-no" value="no">
         </fieldset> <br>
         <fieldset>
             <legend>
                 If yes, how many?
             </legend>
             <label for="pet1-2"> 1-2 </label>
-            <input type="radio" name="pet1-2" id="pet1-2" value="pet1-2">
+            <input type="radio" name="pet-number" id="pet1-2" value="pet1-2">
             <label for="pet3-5"> 3-5 </label> 
-            <input type="radio" name="petno" id="pet-no" value="petno"> <br>
+            <input type="radio" name="pet-number" id="pet3-5" value="pet3-5"> <br>
             <label for="pet6"> 6 or more </label>
-            <input type="radio" name="pet6more" id="pet6" value="pet6more">
+            <input type="radio" name="pet-number" id="pet6" value="pet6more">
         </fieldset> <br>
         <fieldset>
             <legend> Additional comments and suggestions:</legend>
@@ -70,15 +69,17 @@
                 <textarea name="comment" id="comments" wrap="hard" cols="60" rows="10" required></textarea>
             </div>
         </fieldset>
-        <input type="submit" onclick="alert('Successfully submitted!')" value="Submit">
+        <input type="submit" value="Submit">
         <input type="reset" value="Reset"> 
     </form> <br>
     <iframe name="cgi-results" id="cgi-results"></iframe> <br>
     <img class="center-image" src="images/fancy capybara.webp" alt="Capybara in a suit">
+    </div>
     <footer>
         <p>
             @2022 Cool Animal Facts!
         </p>
     </footer>
+    <script src="js/sticky-header.js"></script>
 </body>
 </html>
